@@ -5,13 +5,51 @@
 1. Todo list for part 1:
 > Create a virtual environment: virtualenv dj_vue
 > Install Django and create a project: pip install django 
--Set up the database
--Create a superuser
--Create a folder for the Django apps
--Create folder and Django app for the core views (apps/core)
-    -Create the base template
--Create view for the front page and a very basic template
--Creating a contact simple page
--Check that everything is working
+> django-admin startproject django_pro
+manage.py - brain all project
+asgi.py - setting for server
+wsgi.py - setting for server
+setting.py - setting all project
+urls.py - contents all pages
 
-2. Use vue.js and axios for server part
+> Set up the database
+python3 manage.py migrate
+>Create a superuser
+python3 manage.py createsuperuser
+>Create a folder for the Django apps
+mkdir apps
+> Create folder and Django app for the core views (apps/core)
+python3 manage.py startapp core apps/core 
+    >Create the base template
+    mkdir apps/core/templates
+    
+>Create view for the front page and a very basic template
+create base.html - this base file for all project
+>Creating a contact simple page
+frontpage.html - this main page next setting urls.py and 
+next setting.py add name project
+>Check that everything is working
+python3 manage.py runserver
+
+/home/regina/my_project/dj_vue/django_pro/manage.py
+
+2. Todo list for part 2:
+>Create folder and app for the store app
+mkdir apps/store
+python3 manage.py startapp store apps/store
+>Get list of products and show on the front page
+python3 manage.py makemigrations
+-Show detail view for a product
+-Show categories in the menu
+-Show detail view for a category (Title and list related products)
+
+3. Todo list for part 3:
+-Create a footer and move "Contact" link down
+-Create an about page
+-Make it possible to set ordering for the categories
+-Add ordering to products, newest first
+-Only show featured products on the frontpage
+-Create folder and app for the cart
+-Create a view for the cart and show link in the menu
+
+4. 
