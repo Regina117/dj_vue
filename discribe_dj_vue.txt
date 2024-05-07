@@ -52,4 +52,15 @@ python3 manage.py makemigrations
 -Create folder and app for the cart
 -Create a view for the cart and show link in the menu
 
-4. 
+4. Todo list for part 4: Vue.js and cart
+-Add two settings for the cart in the settings file
+-Rename cart view to cart_detail
+-Create a Cart class
+-Make it possible to add products to the cart
+-Make it possible to remove products from the cart
+
+5. Todo list for part 5: More cart
+-Show quantity and price in the cart
+-Update quantity
+-More Vue.js in the cart (automatically remove products, etc)
+-Show cart in the menu (with quantity)
